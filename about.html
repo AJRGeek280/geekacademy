@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geek Academy | Haitian Tech Academy</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="assets/icons/site.webmanifest">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts (Poppins, Roboto) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Icones (remixicon ou boxicons) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Feuille de style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Ajouter le lien CDN de AOS.js dans le head -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <!-- Contenu à venir -->
+   <!-- Loader HTML -->
+<div class="loader" id="loader">
+    <div class="spinner"></div>
+</div>
+  
+  <!-- 🌌 HEADER -->
+  <header class="navbar navbar-expand-lg bg-dark-custom px-3 py-2 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="#">
+        <i class="ri-brain-line me-2 text-accent"></i>Geek Academy
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Formations</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Témoignages</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Partenariats</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">À propos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="btn btn-accent ms-lg-3 mt-2 mt-lg-0">S'inscrire</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🚀 HERO SECTION -->
+<section class="hero-section text-white d-flex align-items-center position-relative overflow-hidden" data-aos="fade-up">
+  <div class="gradient-overlay"></div> <!-- Animation lumière -->
+  
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <!-- Texte -->
+      <div class="col-md-6 text-center text-md-start">
+        <h1 class="display-4 fw-bold mb-5" style="margin-top: -15px;">À propos de<span id="acc"> Geek Academy </span></h1>
+        
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-6 text-center" data-aos="zoom-in">
+        <img src="assets/images/geek1.png" class="img-fluid hero-img" alt="Geek Academy">
+      </div>
+    </div>
+  </div>
+
+  <!-- Vague SVG -->
+  <svg class="wave-bottom" viewBox="0 0 1440 320">
+    <path fill="#fff" fill-opacity="1"
+      d="M0,224L48,213.3C96,203,192,181,288,176C384,171,480,181,576,186.7C672,192,768,192,864,197.3C960,203,1056,213,1152,213.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L0,320Z">
+    </path>
+  </svg>
+</section>
+  
+  
+
+ <!-- 🚀 À propos de nous -->
+<section id="about" class="about-section py-5" data-aos="fade-up">
+    <div class="container text-center">
+      <p class="lead mb-5">
+        Fondée à Port-au-Prince, Haïti, Geek Academy est une institution éducative dédiée à la formation et au perfectionnement dans le domaine des technologies de l'information (TI). Notre mission est de fournir des programmes éducatifs de haute qualité, adaptés aux besoins évolutifs du marché technologique, afin d'équiper nos étudiants des compétences essentielles pour exceller dans le secteur numérique.</p>
+      <div class="row">
+        <!-- Formation en informatique -->
+        <div class="col-md-4 mb-4">
+          <div class="icon-box" data-aos="flip-left">
+            <i class="ri-focus-3-line text-accent" style="font-size: 24px;"></i>
+            <h5 class="mt-3">Mission</h5>
+            <p>Démocratiser l'accès à une éducation technologique de pointe en Haïti et contribuer activement au développement technologique du pays.</p>
+          </div>
+        </div>
+        <!-- Cybersécurité -->
+        <div class="col-md-4 mb-4">
+          <div class="icon-box" data-aos="flip-left" data-aos-delay="200">
+            <i class="ri-eye-line text-accent" style="font-size: 24px;"></i>
+            <h5 class="mt-3">Vision</h5>
+            <p>Devenir le principal centre de formation en technologies de l'information en Haiti et contribuer à l'essor d'une économie numérique florissante en Haïti.</p>
+          </div>
+        </div>
+        <!-- Intelligence Artificielle -->
+        <div class="col-md-4 mb-4">
+          <div class="icon-box" data-aos="flip-left" data-aos-delay="400">
+            <i class="ri-hand-heart-line text-accent" style="font-size: 24px;"></i>
+            <h5 class="mt-3">Valeurs</h5>
+            <p>- Excellence</br>​
+
+                - Innovation</br>​
+                
+                - Collaboration</br>​
+                
+                - Intégrité</br>​​
+                
+                - Engagement Communautaire</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <p class="lead mb-5" data-aos="fade-up">
+        Rejoignez-nous pour façonner l'avenir et maîtriser les technologies qui transformeront le monde.
+      </p>
+      <a href="#" id="btnplus" class="btn btn-primary btn-lg" data-aos="fade-up">Explorer les formations</a>
+    </div>
+</section>
+  
+  <section id="testimonials" class="testimonials-section py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="display-4 fw-bold text-center mb-5">Notre <span id="acc">Equipe</span></h2>
+      <p class="lead mb-5">
+        Notre équipe est composée de professionnels passionnés par la technologie et l'éducation. Nous travaillons ensemble pour offrir des formations de haute qualité et faire évoluer le secteur numérique en Haïti.</p>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Première diapositive -->
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- Témoignage 1 -->
+              <div class="col-md-4">
+                <div class="testimonial-card text-center">
+                  <img src="assets/images/img1.jpg" alt="Photo de Alex Dupont" class="testimonial-img mx-auto">
+                  <p class="testimonial-text">"PDG et Fondateur"</p>
+                  <p class="testimonial-author">Antoine Josue R.</br>   
+                  <a href="#" class="social-icon"><i class="fab fa-facebook-f" style="color: #00FFAA;"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-twitter" style="color: #00FFAA;"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-linkedin-in" style="color: #00FFAA;"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-instagram" style="color: #00FFAA;"></i></a>
+                  </p>
+                </div>
+              </div>
+              <!-- Témoignage 2 -->
+              <div class="col-md-4">
+                <div class="testimonial-card text-center">
+                    <img src="assets/images/img1.jpg" alt="Photo de Alex Dupont" class="testimonial-img mx-auto">
+                    <p class="testimonial-text">"PDG et Fondateur"</p>
+                    <p class="testimonial-author">Antoine Josue R.</br>   
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram" style="color: #00FFAA;"></i></a>
+                    </p>
+                  </div>
+              </div>
+              <!-- Témoignage 3 -->
+              <div class="col-md-4">
+                <div class="testimonial-card text-center">
+                    <img src="assets/images/img1.jpg" alt="Photo de Alex Dupont" class="testimonial-img mx-auto">
+                    <p class="testimonial-text">"PDG et Fondateur"</p>
+                    <p class="testimonial-author">Antoine Josue R.</br>   
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram" style="color: #00FFAA;"></i></a>
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- Deuxième diapositive -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- Témoignage 4 -->
+              <div class="col-md-4">
+                <div class="testimonial-card text-center">
+                    <img src="assets/images/img1.jpg" alt="Photo de Alex Dupont" class="testimonial-img mx-auto">
+                    <p class="testimonial-text">"PDG et Fondateur"</p>
+                    <p class="testimonial-author">Antoine Josue R.</br>   
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram" style="color: #00FFAA;"></i></a>
+                    </p>
+                  </div>
+              </div>
+              <!-- Témoignage 5 -->
+              <div class="col-md-4">
+                <div class="testimonial-card text-center">
+                    <img src="assets/images/img1.jpg" alt="Photo de Alex Dupont" class="testimonial-img mx-auto">
+                    <p class="testimonial-text">"PDG et Fondateur"</p>
+                    <p class="testimonial-author">Antoine Josue R.</br>   
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram" style="color: #00FFAA;"></i></a>
+                    </p>
+                  </div>
+              </div>
+              <!-- Témoignage 6 -->
+              <div class="col-md-4">
+                <div class="testimonial-card text-center">
+                    <img src="assets/images/img1.jpg" alt="Photo de Alex Dupont" class="testimonial-img mx-auto">
+                    <p class="testimonial-text">"PDG et Fondateur"</p>
+                    <p class="testimonial-author">Antoine Josue R.</br>   
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in" style="color: #00FFAA;"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram" style="color: #00FFAA;"></i></a>
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- Ajoutez d'autres diapositives si nécessaire -->
+        </div>
+        <!-- Contrôles du carrousel -->
+        <div class="carousel-controls">
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Ajouter les icônes FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  
+<!-- 🤝 Section Nos Partenaires -->
+<section id="partners" class="partners-section py-5" data-aos="fade-up">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-4">Geek Academy <span id="acc">En Chiffres</span></h2>
+    <p class="lead mb-5 text-center">
+        Nos formations continuent à contribuer à la transformation numérique et à la promotion de l’éducation technologique en Haïti. Nous comptons à nos chiffres actuels:
+    </p>
+    <div class="row justify-content-center align-items-center gx-4 gy-4">
+      <!-- chiffres-->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <p class="lead mb-5">
+                100 +</br>
+                Etudiants
+            </p>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <p class="lead mb-5">
+            100 +</br>
+            Etudiants
+        </p>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <p class="lead mb-5">
+            100 +</br>
+            Etudiants
+        </p>
+  </div>
+  <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+    <p class="lead mb-5">
+        100 +</br>
+        Etudiants
+    </p>
+</div>
+    </div>
+  </div>
+</section>
+
+  
+<!-- 🚀 Rejoignez Geek Academy -->
+<section id="cta-join-geek-academy" class="cta-section py-5" data-aos="zoom-in">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Colonne Texte -->
+        <div class="col-md-6">
+          <h2 class="display-4 fw-bold mb-3">Prêt à Devenir un Expert en Technologie ?</h2>
+          <p class="lead mb-4">
+            Rejoignez Geek Academy dès aujourd'hui et accédez à des formations de pointe pour maîtriser les technologies qui façonnent le futur.
+          </p>
+          <a href="#signup" class="btn btn-primary btn-lg">Rejoignez-nous Maintenant</a>
+        </div>
+        <!-- Colonne Image -->
+        <div class="col-md-6">
+          <img src="assets/images/geek5.png" alt="Description de l'image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Première colonne : Présentation de l'Académie -->
+        <div class="col-md-3">
+          <h5 class="footer-title">Geek Academy</h5>
+          <ul class="list-unstyled footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Rue de la Technologie, Port-au-Prince, Haïti</li>
+            <li><i class="fas fa-phone-alt"></i> +509 123 456 789</li>
+            <li><i class="fas fa-envelope"></i> contact@geekacademy.ht</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <!-- Deuxième colonne : Liens rapides -->
+        <div class="col-md-3">
+          <h5 class="footer-title">Liens rapides</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#"><span id="acc">></span> Accueil</a></li>
+            <li><a href="#"><span id="acc">></span> À propos</a></li>
+            <li><a href="#"><span id="acc">></span> Formations</a></li>
+            <li><a href="#"><span id="acc">></span> Événements</a></li>
+            <li><a href="#"><span id="acc">></span> Contact</a></li>
+          </ul>
+        </div>
+        <!-- Troisième colonne : Nos formations -->
+        <div class="col-md-3">
+          <h5 class="footer-title">Nos formations</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#"><span id="acc">></span> Développement Web</a></li>
+            <li><a href="#"><span id="acc">></span> Data Science</a></li>
+            <li><a href="#"><span id="acc">></span> Cybersécurité</a></li>
+            <li><a href="#"><span id="acc">></span> Intelligence Artificielle</a></li>
+            <li><a href="#"><span id="acc">></span> Blockchain</a></li>
+            <li><a href="#"><span id="acc">></span> Autres ...</a></li>
+          </ul>
+        </div>
+        <!-- Quatrième colonne : Contact par icônes -->
+        <div class="col-md-3">
+            <h5 class="footer-title text-center">Abonnez-vous à notre Newsletter</h5>
+            <form action="chemin/vers/traitement_newsletter.php" method="POST" class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Adresse e-mail" name="newsletter-email" required>
+                <button class="btn btn-primary" type="submit">S'abonner</button>
+              </div>
+            </form>
+          <img src="assets/images/logo.png" alt="Logo Geek Academy" class="mb-3 footer-logo">
+        </div>
+      </div>
+    </div>
+    <p class="text-center mt-4">© 2025 Geek Academy. Tous droits réservés.</p>
+  </footer>
+  
+  
+
+  <!-- Scripts -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Ajouter le script AOS.js avant la fermeture du body -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
