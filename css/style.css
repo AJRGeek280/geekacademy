@@ -7,6 +7,12 @@
     --bg-dark: #121212;
     --bg-white: #FFFFFF;
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
   /* Police */
   body {
@@ -14,6 +20,11 @@
     background-color: var(--bg-white);
     color: var(--text-white);
     scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  html, body {
+    overflow-x: hidden;
   }
   
   a {
@@ -58,6 +69,7 @@
   
 /* NAVBAR */
 .bg-dark-custom {
+  overflow-x: hidden;
   background-color: var(--main-blue);
 }
 
@@ -109,6 +121,7 @@
 /* HERO SECTION */
 .hero-section {
   min-height: 100vh;
+  width: 100%;
   background: linear-gradient(45deg, #0A2A52, #121212, #0A2A52);
   background-size: 300% 300%;
   animation: gradientAnimation 10s ease infinite;
@@ -117,6 +130,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
 }
 
 @keyframes gradientAnimation {
@@ -148,6 +162,7 @@
   left: 0;
   width: 100%;
   height: auto;
+  display: block;
   z-index: 1;
 }
 
@@ -165,6 +180,14 @@
 .hero-section .container {
   position: relative;
   z-index: 2;
+  max-width: 100%; /* Empêche le débordement horizontal */
+  padding-left: 15px; /* Ajustez les paddings si nécessaire */
+  padding-right: 15px;
+}
+
+.hero-section .row {
+  margin-left: 0; /* Supprime les marges négatives */
+  margin-right: 0;
 }
 
 #btnplus {
@@ -190,7 +213,6 @@
 @media (max-width: 991.98px) {
   .navbar-collapse {
     background-color: var(--main-blue);
-    padding: 1rem;
     margin-top: 0.5rem;
     border-radius: 8px;
   }
@@ -233,6 +255,11 @@
   .hero-section .row {
     flex-direction: column-reverse;
   }
+
+  .hero-section .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   
   .hero-section h1 {
     font-size: 2rem;
@@ -246,7 +273,7 @@
   
   .hero-img {
     max-width: 85%;
-    margin-bottom: 2rem;
+    margin: 0 auto;
   }
   
   .d-flex.flex-wrap {
